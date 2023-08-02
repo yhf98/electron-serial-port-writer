@@ -5,7 +5,7 @@
   "keywords": [],
   "main": "./main.js",
   "version": "1.0.3",
-  "author": "Agular",
+  "author": "YaoHengfeng",
   "scripts": {
     "start": "electron-forge start",
     "package": "electron-forge package",

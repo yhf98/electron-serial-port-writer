@@ -4,8 +4,8 @@
   "description": "Electron-烧录器",
   "keywords": [],
   "main": "./main.js",
-  "version": "1.0.3",
-  "author": "YaoHengfeng",
+  "version": "1.0.5",
+  "author": "Yao Hengfeng",
   "scripts": {
     "start": "electron-forge start",
     "package": "electron-forge package",
@@ -13,6 +13,7 @@
     "publish": "electron-forge publish",
     "lint": "echo \"No linting configured\""
   },
+  
   "dependencies": {
     "intel-hex": "^0.2.0",
     "serialport": "10.3.0"
@@ -51,3 +52,5 @@
   },
   "license": "MIT"
 }
+
+

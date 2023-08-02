@@ -4,7 +4,7 @@
   "description": "Electron-烧录器",
   "keywords": [],
   "main": "./main.js",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "author": "Agular",
   "scripts": {
     "start": "electron-forge start",
@@ -14,6 +14,7 @@
     "lint": "echo \"No linting configured\""
   },
   "dependencies": {
+    "intel-hex": "^0.2.0",
     "serialport": "10.3.0"
   },
   "devDependencies": {

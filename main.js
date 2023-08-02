@@ -2,7 +2,7 @@
  * @Author: 姚恒锋 1921934563@qq.com
  * @Date: 2023-07-31 18:41:54
  * @LastEditors: 姚恒锋 1921934563@qq.com
- * @LastEditTime: 2023-08-01 11:23:37
+ * @LastEditTime: 2023-08-01 15:19:38
  * @FilePath: \electron-serialport\main.js
  * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
  */
@@ -50,7 +50,8 @@ function createWindow() {
     ipcMain.on('openFile', async (e, arg) => {
         try {
             const result = await dialog.showOpenDialog(mainWindow, {
-                properties: ['openFile']
+                properties: ['openFile'],
+                filters: [{ name: "hex", extensions: ["hex"] }],
             });
             if (!result.canceled) {
                 console.log(result.filePaths);
